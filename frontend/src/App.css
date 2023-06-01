@@ -28,9 +28,13 @@ html,
 
   ;
 }
+
 .App{
   background-color: #e7d3b5;
-  ;
+  background-image: url("https://ayush.lk/wp-content/themes/twentytwenty/images/fa-article.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .products{
   color: #4A8082;

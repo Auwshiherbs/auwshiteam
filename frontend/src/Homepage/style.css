@@ -443,7 +443,8 @@ body {
     overflow: hidden;
     border-radius: 20px;
     min-height: 450px;
-    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); */
+    background-color: #cdb290;
   }
   
   @media (max-width: 768px) {
@@ -473,11 +474,12 @@ body {
     bottom: 0;
     left: 0;
     background: inherit;
-    -webkit-filter: grayscale(1);
+    /* -webkit-filter: grayscale(1);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: grayscale(100%);
+    filter: grayscale(100%); */
+    background-color: #cdb290 !important;
   }
   
   .card.card-has-bg:hover {
@@ -527,5 +529,6 @@ body {
   }  
 
   /* about */
-
+  
+/*about end*/
   

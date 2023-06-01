@@ -14,31 +14,16 @@ export  default function Footer (){
           {/* Facebook */}
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://www.facebook.com/profile.php?id=100091527062973"  target="blank"
             role="button"
           >
             <i className="fab fa-facebook-f" />
           </a>
-          {/* Twitter */}
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-twitter" />
-          </a>
-          {/* Google */}
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-google" />
-          </a>
+        
           {/* Instagram */}
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="www.instagram.com/auwshi_herbs"
             role="button"
           >
             <i className="fab fa-instagram" />
@@ -51,14 +36,7 @@ export  default function Footer (){
           >
             <i className="fab fa-linkedin-in" />
           </a>
-          {/* Github */}
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-github" />
-          </a>
+          
         </section>
         {/* Section: Social media */}
       </div>
@@ -68,9 +46,9 @@ export  default function Footer (){
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2020 Copyright:
+        © 2020 Copyright:<> </>
         <a className="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+          auwshiherbs.com
         </a>
       </div>
       {/* Copyright */}

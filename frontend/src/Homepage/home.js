@@ -19,8 +19,6 @@ const CardComponent = () => {
   <br />
   <br />
   <br />
-  <br />
-  <br />
   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -123,7 +121,7 @@ const CardComponent = () => {
                   by the readable content of a page when looking at its layout.
                 </p>
                 <button type="button" className="read_more_btn">
-                  Read More
+                  Show More
                 </button>
               </div>
             </div>
@@ -431,7 +429,7 @@ const CardComponent = () => {
       <div className="card-footer">
         {/* Footer content */}
         <div className="media">
-          <img src="..." alt="..." />
+          <img src="" alt="" />
         </div>
       </div>
     </div>
@@ -441,46 +439,60 @@ const CardComponent = () => {
 
 
 
-//page loader ends
 
 
-// import './Carousel.css';
 //jathu courousel starts
 const CarouselComponent = () => {
   return (
     
-    <div className="container-fluid p-2 mb-5 wow fadeIn firstcaro" data-wow-delay="0.1s" >
-      <Carousel id="header-carousel firstcaro" style = {{}}>
-        <Carousel.Item>
-          <img className="w-100 firstcaro" src="images/products/imagev3.jpg" alt="Image" />
-          <Carousel.Caption>
-            <div className="container">
-              <div className="row justify-content-start">
-                <div className="col-lg-7">
-                  {/* <h1 className="display-2 mb-5 animated slideInDown">Organic Food Is Good For Health</h1> */}
-                  {/* <a href="" className="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a> */}
-                  {/* <a href="" className="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Services</a> */}
-                </div>
-              </div>
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="w-100" src="images/products/imagev3.jpg" alt="Image" />
-          <Carousel.Caption>
-            <div className="container">
-              <div className="row justify-content-start">
-                <div className="col-lg-7">
-                  {/* <h1 className="display-2 mb-5 animated slideInDown">Natural Food Is Always Healthy</h1> */}
-                  {/* <a href="" className="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a>
-                  <a href="" className="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Services</a> */}
-                </div>
-              </div>
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+<div
+  id="carouselExampleInterval"
+  className="carousel slide"
+  data-mdb-ride="carousel"
+>
+  <div className="carousel-inner">
+    <div className="carousel-item active" data-mdb-interval={10000}>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+        className="d-block w-100"
+        alt="Wild Landscape"
+      />
     </div>
+    <div className="carousel-item" data-mdb-interval={2000}>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+        className="d-block w-100"
+        alt="Camera"
+      />
+    </div>
+    <div className="carousel-item">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+        className="d-block w-100"
+        alt="Exotic Fruits"
+      />
+    </div>
+  </div>
+  <button
+    className="carousel-control-prev"
+    data-mdb-target="#carouselExampleInterval"
+    type="button"
+    data-mdb-slide="prev"
+  >
+    <span className="carousel-control-prev-icon" aria-hidden="true" />
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button
+    className="carousel-control-next"
+    data-mdb-target="#carouselExampleInterval"
+    type="button"
+    data-mdb-slide="next"
+  >
+    <span className="carousel-control-next-icon" aria-hidden="true" />
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+
   );
 };
 //jathu courousel ends
@@ -601,7 +613,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
-      <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
         <div
           className="card text-white card-has-bg click-col"
           style={{
@@ -650,152 +662,12 @@ const Feature = () => {
 };
 
 
-// function ProductSection() {
+// function About02() {
 // return (
   
 // )
 // }
 
-const  NewCard = ()=> {
-  return (
-    <section className="wrapper">
-  <div className="container">
-   
-    <div className="row">
-      <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
-        <div
-          className="card text-white card-has-bg click-col"
-          style={{
-            backgroundImage:
-              'url("https://source.unsplash.com/600x900/?tech,street")'
-          }}
-        >
-          <img
-            className="card-img d-none"
-            src="https://source.unsplash.com/600x900/?tech,street"
-            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
-          />
-          <div className="card-img-overlay d-flex flex-column">
-            <div className="card-body">
-              <small className="card-meta mb-2">Thought Leadership</small>
-              <h4 className="card-title mt-0 ">
-                <a className="text-white" herf="#">
-                  Goverment Lorem Ipsum Sit Amet Consectetur dipisi?
-                </a>
-              </h4>
-              <small>
-                <i className="far fa-clock" /> October 15, 2020
-              </small>
-            </div>
-            <div className="card-footer">
-              <div className="media">
-                <img
-                  className="mr-3 rounded-circle"
-                  src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
-                  alt="Generic placeholder image"
-                  style={{ maxWidth: 50 }}
-                />
-                <div className="media-body">
-                  <h6 className="my-0 text-white d-block">Oz Coruhlu</h6>
-                  <small>Director of UI/UX</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
-        <div
-          className="card text-white card-has-bg click-col"
-          style={{
-            backgroundImage:
-              'url("https://source.unsplash.com/600x900/?tree,nature")'
-          }}
-        >
-          <img
-            className="card-img d-none"
-            src="https://source.unsplash.com/600x900/?tree,nature"
-            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
-          />
-          <div className="card-img-overlay d-flex flex-column">
-            <div className="card-body">
-              <small className="card-meta mb-2">Thought Leadership</small>
-              <h4 className="card-title mt-0 ">
-                <a className="text-white" herf="#">
-                  Goverment Lorem Ipsum Sit Amet Consectetur dipisi?
-                </a>
-              </h4>
-              <small>
-                <i className="far fa-clock" /> October 15, 2020
-              </small>
-            </div>
-            <div className="card-footer">
-              <div className="media">
-                <img
-                  className="mr-3 rounded-circle"
-                  src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
-                  alt="Generic placeholder image"
-                  style={{ maxWidth: 50 }}
-                />
-                <div className="media-body">
-                  <h6 className="my-0 text-white d-block">Oz Coruhlu</h6>
-                  <small>Director of UI/UX</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
-        <div
-          className="card text-white card-has-bg click-col"
-          style={{
-            backgroundImage:
-              'url("https://source.unsplash.com/600x900/?computer,design")'
-          }}
-        >
-          <img
-            className="card-img d-none"
-            src="https://source.unsplash.com/600x900/?computer,design"
-            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
-          />
-          <div className="card-img-overlay d-flex flex-column">
-            <div className="card-body">
-              <small className="card-meta mb-2">Thought Leadership</small>
-              <h4 className="card-title mt-0 ">
-                <a className="text-white" herf="#">
-                  Goverment Lorem Ipsum Sit Amet Consectetur dipisi?
-                </a>
-              </h4>
-              <small>
-                <i className="far fa-clock" /> October 15, 2020
-              </small>
-            </div>
-            <div className="card-footer">
-              <div className="media">
-                <img
-                  className="mr-3 rounded-circle"
-                  src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
-                  alt="Generic placeholder image"
-                  style={{ maxWidth: 50 }}
-                />
-                <div className="media-body">
-                  <h6 className="my-0 text-white d-block">Oz Coruhlu</h6>
-                  <small>Director of UI/UX</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-  )
-}
 
 
 
@@ -810,14 +682,12 @@ function App() {
       <CarouselComponent></CarouselComponent>
       <br></br>
       {/* <MyCards></MyCards> */}
-      {<About></About>}
-      <br></br>
+      {<About></About>}   
       {<Feature></Feature>}
-      <br></br><br></br><br></br>
-      {/* {<ProductSection></ProductSection>} */}
-      <br></br><br></br>
+      {/* {<About02></About02>} */}
+      <br></br>
      { <CardComponent></CardComponent>}
-     <NewCard></NewCard>
+     {/* <NewCard></NewCard> */}
       
       
       
