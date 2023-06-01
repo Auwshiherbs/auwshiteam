@@ -14,6 +14,10 @@ html,
   background-color: #09ed10;
   margin-top: -10px;
 } */
+.same{
+  background-color: #cdb290;
+  left: -100px;
+}
 .dash{
   background-color: #f58709
 
@@ -22,6 +26,10 @@ html,
 
 
 
+  ;
+}
+.App{
+  background-color: #e7d3b5;
   ;
 }
 .products{
