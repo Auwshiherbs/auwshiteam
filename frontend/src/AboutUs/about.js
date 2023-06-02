@@ -7,165 +7,179 @@ import './bootstrap.min.css';
 import './style.css';
 import './animate.css';
 import './animate.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-const PageHeader = () => {
+const Aabout = () => {
   return (
-    <div className="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div className="container-xxl py-5">
       <div className="container">
-        <h1 className="display-3 mb-3 animated slideInDown">About Us</h1>
-        <nav >
-          <ol className="breadcrumb mb-0">
-            <li className="breadcrumb-item"><a className="text-body" href="/">Home</a></li>
-            <li className="breadcrumb-item text-dark active" aria-current="page">About Us</li>
-          </ol>
-        </nav>
+        <div className="row  align-items-center same">
+          <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div className="about-img position-relative overflow-hidden p-5 pe-0">
+              <img className="img-fluid w-100" src="images/products/imageV1.jpg" alt="About" />
+            </div>
+          </div>
+          <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <h1 className="display-5 mb-4">Best Herbal Products And Medicines</h1>
+            <p className="mb-4">
+            Herbal products and medicines, derived from plants and herbs, are gaining popularity for their natural healing properties. Echinacea, turmeric, ginger, garlic, peppermint, St. John's Wort, chamomile, valerian root, ginseng, and milk thistle are commonly recognized herbal remedies. However, it's important to consult with a healthcare professional before using them, as they can still have side effects and interactions with medications.
+            </p>
+            {/* <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a> */}
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-
-
-
-function Foody(){
+const Feature = () => {
   return (
-    <div>
-      {/* Navbar Start */}
-      {/* Your navbar code here */}
-      {/* Navbar End */}
-
-      {/* About Start */}
-      {<div className="container-xxl py-5">
-    <div className="container">
-      <div className="row g-5 align-items-center">
-        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-          <div className="about-img position-relative overflow-hidden p-5 pe-0">
-            <img className="img-fluid w-100 imagev1" src="images/products/imageV1.jpg" />
-          </div>
+    <div className="container-fluid feature bg-icon my-5 py-6">
+      <div className="container">
+        <div className="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '500px' }}>
+          <h1 className="display-5 mb-3">Our Features</h1>
+          <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
         </div>
-        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-          <h1 className="display-5 mb-4">Best Herbal Products And Medicines</h1>
-          <p className="mb-4">
-          Herbal products and medicines, derived from plants and herbs, are gaining popularity for their natural healing properties. Echinacea, turmeric, ginger, garlic, peppermint, St. John's Wort, chamomile, valerian root, ginseng, and milk thistle are commonly recognized herbal remedies. However, it's important to consult with a healthcare professional before using them, as they can still have side effects and interactions with medications.
-
-          </p>
-          <p>
-            <i className="fa fa-check text-primary me-3" />
-            Tempor erat elitr rebum at clita
-          </p>
-          <p>
-            <i className="fa fa-check text-primary me-3" />
-            Aliqu diam amet diam et eos
-          </p>
-          <p>
-            <i className="fa fa-check text-primary me-3" />
-            Clita duo justo magna dolore erat amet
-          </p>
-          {/* <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">
-            Read More
-          </a> */}
-        </div>
-      </div>
-    </div>
-  </div>}
-      {/* About End */}
-
-      {/* Firm Visit Start */}
-      {/* { <div className="container-fluid bg-primary bg-icon mt-5 py-6">
-    <div className="container">
-      <div className="row g-5 align-items-center">
-        <div className="col-md-7 wow fadeIn" data-wow-delay="0.1s">
-          <h1 className="display-5 text-white mb-3">Visit Our Firm</h1>
-          <p className="text-white mb-0">
-            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-            lorem sit clita duo justo magna dolore erat amet. Diam dolor diam
-            ipsum sit. Aliqu diam amet diam et eos.
-          </p>
-        </div> */}
-        {/* <div className="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-          <a
-            className="btn btn-lg btn-secondary rounded-pill py-3 px-5"
-            href=""
-          >
-            Visit Now
-          </a>
-        </div> */}
-      {/* </div>
-    </div>
-  </div>} */}
-      {/* Firm Visit End */}
-
-      {/* Feature Start */}
-      {
-  <div className="container-fluid bg-light bg-icon py-6">
-    <div className="container">
-      <div
-        className="section-header text-center mx-auto mb-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-        style={{ maxWidth: 500 }}
-      >
-        <h1 className="display-5 mb-3">Our Features</h1>
-        <p>
-          Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
-          justo sed rebum vero dolor duo.
-        </p>
-      </div>
-      <div className="row g-4">
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div className="bg-white text-center h-100 p-4 p-xl-5">
-            <img className="img-fluid mb-4" src="images/products/imagev3.jpg" alt="" />
-            <h4 className="mb-3">Natural Process</h4>
-            <p className="mb-4">
-              Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
-              justo sed vero dolor duo.
-            </p>
-          
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div className="bg-white text-center h-100 p-4 p-xl-5">
-            <img className="img-fluid mb-4" src="images/products/imagev3.jpg" alt="" />
-            <h4 className="mb-3">Organic Products</h4>
-            <p className="mb-4">
-              Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
-              justo sed vero dolor duo.
-            </p>
-            {/* <a
-              className="btn btn-outline-primary border-2 py-2 px-4 rounded-pill"
-              href=""
-            >
-              Read More
-            </a> */}
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div className="bg-white text-center h-100 p-4 p-xl-5">
-            <img className="img-fluid mb-4" src="images/products/imagev3.jpg" alt="" />
-            <h4 className="mb-3">Biologically Safe</h4>
-            <p className="mb-4">
-              Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
-              justo sed vero dolor duo.
-            </p>
-            {/* <a
-              className="btn btn-outline-primary border-2 py-2 px-4 rounded-pill"
-              href=""
-            >
-              Read More
-            </a> */}
+        <div className="row g-4">
+        <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div
+          className="card text-white card-has-bg click-col"
+          style={{
+            backgroundImage:
+              'url("https://source.unsplash.com/600x900/?tech,street")'
+          }}
+        >
+          <img
+            className="card-img d-none"
+            src="https://source.unsplash.com/600x900/?tech,street"
+            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
+          />
+          <div className="card-img-overlay d-flex flex-column">
+            <div className="card-body">
+              <small className="card-meta mb-2">Thought Leadership</small>
+              <h4 className="card-title mt-0 ">
+                <a className="text-white" herf="#">
+                  Goverment Lorem Ipsum Sit Amet Consectetur dipisi?
+                </a>
+              </h4>
+              <small>
+                <i className="far fa-clock" /> October 15, 2020
+              </small>
+            </div>
+            <div className="card-footer">
+              <div className="media">
+                <img
+                  className="mr-3 rounded-circle"
+                  src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
+                  alt="Generic placeholder image"
+                  style={{ maxWidth: 50 }}
+                />
+                <div className="media-body">
+                  <h6 className="my-0 text-white d-block">Oz Coruhlu</h6>
+                  <small>Director of UI/UX</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div
+          className="card text-white card-has-bg click-col"
+          style={{
+            backgroundImage:
+              'url("https://source.unsplash.com/600x900/?tech,street")'
+          }}
+        >
+          <img
+            className="card-img d-none"
+            src="https://source.unsplash.com/600x900/?tech,street"
+            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
+          />
+          <div className="card-img-overlay d-flex flex-column">
+            <div className="card-body">
+              <small className="card-meta mb-2">Thought Leadership</small>
+              <h4 className="card-title mt-0 ">
+                <a className="text-white" herf="#">
+                  Goverment Lorem Ipsum Sit Amet Consectetur dipisi?
+                </a>
+              </h4>
+              <small>
+                <i className="far fa-clock" /> October 15, 2020
+              </small>
+            </div>
+            <div className="card-footer">
+              <div className="media">
+                <img
+                  className="mr-3 rounded-circle"
+                  src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
+                  alt="Generic placeholder image"
+                  style={{ maxWidth: 50 }}
+                />
+                <div className="media-body">
+                  <h6 className="my-0 text-white d-block">Oz Coruhlu</h6>
+                  <small>Director of UI/UX</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div
+          className="card text-white card-has-bg click-col"
+          style={{
+            backgroundImage:
+              'url("https://source.unsplash.com/600x900/?tech,street")'
+          }}
+        >
+          <img
+            className="card-img d-none"
+            src="https://source.unsplash.com/600x900/?tech,street"
+            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
+          />
+          <div className="card-img-overlay d-flex flex-column">
+            <div className="card-body">
+              <small className="card-meta mb-2">Thought Leadership</small>
+              <h4 className="card-title mt-0 ">
+                <a className="text-white" herf="#">
+                  Goverment Lorem Ipsum Sit Amet Consectetur dipisi?
+                </a>
+              </h4>
+              <small>
+                <i className="far fa-clock" /> October 15, 2020
+              </small>
+            </div>
+            <div className="card-footer">
+              <div className="media">
+                <img
+                  className="mr-3 rounded-circle"
+                  src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
+                  alt="Generic placeholder image"
+                  style={{ maxWidth: 50 }}
+                />
+                <div className="media-body">
+                  <h6 className="my-0 text-white d-block">Oz Coruhlu</h6>
+                  <small>Director of UI/UX</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
     </div>
-  </div>}
-      {/* Feature End */}
-<br></br>
-<br></br>
-      {/* contact Start */}
-      { <div className="container-xxl py-6">
+  );
+};
+
+const Contact = ()=>{
+  return (
+    <div className="container-xxl py-6">
     <div className="container">
       <div
         className="section-header text-center mx-auto mb-5 wow fadeInUp"
@@ -226,11 +240,6 @@ function Foody(){
           </div>
         </div>
         <div className="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-          {/* <p className="mb-4">
-            The contact form is currently inactive. Get a functional and working
-            contact form with Ajax &amp; PHP in a few minutes. Just copy and
-            paste the files, add a little code and you're done.{" "}
-?          </p> */}
           <form>
             <div className="row g-3">
               <div className="col-md-6">
@@ -291,7 +300,53 @@ function Foody(){
         </div>
       </div>
     </div>
-  </div>}
+  </div>
+  )
+}
+
+function Foody(){
+  return (
+    <div>
+      {/* Navbar Start */}
+      {/* Your navbar code here */}
+      {/* Navbar End */}
+
+      {/* About Start */}
+      {}
+      {/* About End */}
+
+      {/* Firm Visit Start */}
+      {/* { <div className="container-fluid bg-primary bg-icon mt-5 py-6">
+    <div className="container">
+      <div className="row g-5 align-items-center">
+        <div className="col-md-7 wow fadeIn" data-wow-delay="0.1s">
+          <h1 className="display-5 text-white mb-3">Visit Our Firm</h1>
+          <p className="text-white mb-0">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet. Diam dolor diam
+            ipsum sit. Aliqu diam amet diam et eos.
+          </p>
+        </div> */}
+        {/* <div className="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
+          <a
+            className="btn btn-lg btn-secondary rounded-pill py-3 px-5"
+            href=""
+          >
+            Visit Now
+          </a>
+        </div> */}
+      {/* </div>
+    </div>
+  </div>} */}
+      {/* Firm Visit End */}
+
+      {/* Feature starts */}    
+      {/* Feature End */}
+<br></br>
+<br></br>
+      {/* contact Start */}
+     
       {/* contact End */}
 
       <br></br>
@@ -434,42 +489,13 @@ function Foody(){
 
 
 
-// function FluidExample() {
-  
-//   return <div class="aboutusimg1">
-//     <h1 align="center">Profile</h1>
-//     <Image src="/images/Auwshi.gif" fluid/>
-//     </div>;
-// }
-// export default FluidExample;
 
-
-
-// function AutoLayoutExample() {
-//   return (
-//     <div class="container">
-//       <h1 align="center">Contact Us</h1>
-
-//   <div class="row">
-//     <div class="col border border-dark">
-//       1 of 2
-//     </div>
-//     <div class="col border border-dark">
-//       2 of 3
-//     </div>
-//   </div>
-//   </div>
-//   );
-// }
-
-// export default AutoLayoutExample;
 function About() {
   return (
     <div>
-      <PageHeader />
-      <br></br>
-      {/* <AutoLayoutExample/> */}
-      <br></br>
+      <Aabout/>
+      <Feature></Feature>
+      <Contact></Contact>
       <Foody/>
     </div>
   )
