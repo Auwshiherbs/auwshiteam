@@ -15,6 +15,7 @@ html,
   margin-top: -10px;
 } */
 .same{
+  border-radius: 10px;
   background-color: #cdb290;
   left: -100px;
 }
@@ -712,6 +713,7 @@ ul.CTAs a {
 }
 
 .container-fluid{
+  border-radius: 10px;
   margin-top: 10px;
   max-width: 1200px;
 }
