@@ -59,7 +59,13 @@ export  default function Footer (){
 
 
   {/* Footer End */}
+  <>
+  {/* Back to Top */}
+
 </>
+
+</>
+
 
     )
 }

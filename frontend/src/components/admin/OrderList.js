@@ -8,6 +8,9 @@ import Loader from '../layouts/Loader';
 import { MDBDataTable} from 'mdbreact';
 import {toast } from 'react-toastify'
 import Sidebar from "./Sidebar"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function OrderList() {
     const { adminOrders = [], loading = true, error, isOrderDeleted }  = useSelector(state => state.orderState)
@@ -54,7 +57,7 @@ export default function OrderList() {
                 status: <p style={{color: order.orderStatus.includes('Processing') ? 'red' : 'green'}}>{order.orderStatus}</p> ,
                 actions: (
                     <Fragment>
-                        <Link to={`/admin/order/${order._id}`} className="btn btn-primary"> <i className="fa fa-pencil"></i></Link>
+                        <Link to={`/admin/order/${order._id}`} className="btn btn-primary"> <FontAwesomeIcon icon={faPencilAlt} /></Link>
                         <Button onClick={e => deleteHandler(e, order._id)} className="btn btn-danger py-1 px-2 ml-2">
                             <i className="fa fa-trash"></i>
                         </Button>

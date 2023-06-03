@@ -8,6 +8,9 @@ import Loader from '../layouts/Loader';
 import { MDBDataTable } from 'mdbreact';
 import { toast } from 'react-toastify'
 import Sidebar from "./Sidebar"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function ProductList() {
     const { products = [], loading = true, error } = useSelector(state => state.productsState)
@@ -71,7 +74,7 @@ export default function ProductList() {
             
                 actions: (
                     <Fragment>
-                        <Link to={`/admin/product/${product._id}`} className="btn btn-primary"> <i className="fa fa-pencil"></i></Link>
+                        <Link to={`/admin/product/${product._id}`} className="btn btn-primary"> <FontAwesomeIcon icon={faPencilAlt} /></Link>
                         <Button onClick={e => deleteHandler(e, product._id)} className="btn btn-danger py-1 px-2 ml-2">
                             <i className="fa fa-trash"></i>
                         </Button>

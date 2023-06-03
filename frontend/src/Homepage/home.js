@@ -3,12 +3,15 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import React from 'react';
+// import React, { useState } from 'react';
 import './bootstrap.min.css';
 import './style.css';
 import './animate.css';
 import './animate.min.css';
 import './CardComponent.css';
+import React, { useState, useEffect } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+import './BackToTop.css';
 
 
 
@@ -120,9 +123,12 @@ const CardComponent = () => {
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
+                <a href="#">
                 <button type="button" className="read_more_btn">
                   Show More
                 </button>
+                </a>
+               
               </div>
             </div>
             <div className="solution_card">
@@ -217,9 +223,12 @@ const CardComponent = () => {
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
-                <button type="button" className="read_more_btn">
-                  Read More
+                <a href="#">
+                  <button type="button" className="read_more_btn">
+                Show More
                 </button>
+                </a>
+                
               </div>
             </div>
           </div>
@@ -317,9 +326,10 @@ const CardComponent = () => {
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
-                <button type="button" className="read_more_btn">
-                  Read More
-                </button>
+                <a href="#"><button type="button" className="read_more_btn">
+                  Show More
+                </button></a>
+                
               </div>
             </div>
             <div className="solution_card">
@@ -414,9 +424,12 @@ const CardComponent = () => {
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
+                <a href="#">
                 <button type="button" className="read_more_btn">
-                  Read More
+                Show More
                 </button>
+                </a>
+               
               </div>
             </div>
           </div>
@@ -436,62 +449,62 @@ const CardComponent = () => {
   );
 };
 
-
-
-
-
-
 //jathu courousel starts
 const CarouselComponent = () => {
   return (
     
-<div
-  id="carouselExampleInterval"
-  className="carousel slide"
-  data-mdb-ride="carousel"
->
-  <div className="carousel-inner">
-    <div className="carousel-item active" data-mdb-interval={10000}>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-        className="d-block w-100"
-        alt="Wild Landscape"
-      />
+<>
+    <div
+      id="carouselExampleIndicators"
+      className="carousel slide my-carousel my-carousel"
+      data-ride="carousel"
+    >
+      <ol className="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to={0}
+          className="active"
+        />
+        <li data-target="#carouselExampleIndicators" data-slide-to={1} />
+        <li data-target="#carouselExampleIndicators" data-slide-to={2} />
+      </ol>
+      <div className="carousel-inner" role="listbox">
+        <div
+          className="carousel-item active"
+          style={{ backgroundImage: 'url("https://i.imgur.com/NnzxG4S.jpg")' }}
+        ></div>
+        <div
+          className="carousel-item "
+          style={{ backgroundImage: 'url("https://i.imgur.com/w439mEw.jpg")' }}
+        ></div>
+        <div
+          className="carousel-item "
+          style={{ backgroundImage: 'url("https://i.imgur.com/cpIrOo1.jpg")' }}
+        ></div>
+      </div>
+      <a
+        className="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span className="carousel-control-prev-icon"  />
+        <span className="sr-only">Previous</span>
+      </a>
+      <a
+        className="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true" />
+        <span className="sr-only">Next</span>
+      </a>
     </div>
-    <div className="carousel-item" data-mdb-interval={2000}>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-        className="d-block w-100"
-        alt="Camera"
-      />
-    </div>
-    <div className="carousel-item">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-        className="d-block w-100"
-        alt="Exotic Fruits"
-      />
-    </div>
-  </div>
-  <button
-    className="carousel-control-prev"
-    data-mdb-target="#carouselExampleInterval"
-    type="button"
-    data-mdb-slide="prev"
-  >
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button
-    className="carousel-control-next"
-    data-mdb-target="#carouselExampleInterval"
-    type="button"
-    data-mdb-slide="next"
-  >
-    <span className="carousel-control-next-icon" aria-hidden="true" />
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
+  
+</>
+
+
 
   );
 };
@@ -662,15 +675,40 @@ const Feature = () => {
 };
 
 
-// function About02() {
-// return (
-  
-// )
-// }
 
+const BackToTop = () => {
+  const [showButton, setShowButton] = useState(false);
 
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
+  useEffect(() => {
+    handleScroll(); // Initialize showButton based on initial scroll position
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className={`back-to-top ${showButton ? 'show' : ''}`} onClick={scrollToTop}>
+      <FaArrowUp />
+    </div>
+  );
+};
 
 
 
@@ -687,7 +725,7 @@ function App() {
       {/* {<About02></About02>} */}
       <br></br>
      { <CardComponent></CardComponent>}
-     {/* <NewCard></NewCard> */}
+     {<BackToTop></BackToTop> }
       
       
       
