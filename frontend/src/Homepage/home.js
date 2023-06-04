@@ -471,7 +471,7 @@ const CarouselComponent = () => {
       <div className="carousel-inner" role="listbox">
         <div
           className="carousel-item active"
-          style={{ backgroundImage: 'url("https://i.imgur.com/NnzxG4S.jpg")' }}
+          style={{ backgroundImage: 'url("https://res.cloudinary.com/dr9pmcwlx/image/upload/v1685911604/Auwshi_Herbs_iziy37.png")' }}
         ></div>
         <div
           className="carousel-item "

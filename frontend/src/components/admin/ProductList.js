@@ -62,7 +62,7 @@ export default function ProductList() {
             data.rows.push({
                 id: product._id,
                 name: product.name,
-                price: `$${product.price}`,
+                price: `LKR ${product.price}`,
                 stock: product.stock,
                 image: (
                     <img

@@ -6,7 +6,7 @@ export  default function Footer (){
   <>
   {/* Remove the container if you want to extend the Footer to full width. */}
   <div>
-    <footer className="bg-dark text-center text-white">
+    <footer className=" text-center text-white">
       {/* Grid container */}
       <div className="container p-4 pb-0">
         {/* Section: Social media */}

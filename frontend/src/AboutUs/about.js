@@ -38,7 +38,7 @@ const Aabout = () => {
 
 const Feature = () => {
   return (
-    <div className="container-fluid feature bg-icon my-5 py-6">
+    <div className=" bg-icon my-5 py-6">
       <div className="container">
         <div className="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '500px' }}>
           <h1 className="display-5 mb-3">Our Features</h1>

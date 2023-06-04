@@ -22,19 +22,15 @@ html,
 .dash{
   background-color: #cdb290;
 
-
-
-
-
-
   ;
 }
 
 .App{
-  background-color: #e7d3b5;
-  background-image: url("https://ayush.lk/wp-content/themes/twentytwenty/images/fa-article.png");
+  background-color: rgba(231, 211, 182, 0.73);
+  background-image: url("https://i.pinimg.com/564x/02/17/fe/0217fe1584aa57dc36dff482de55e9dc.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 95px;
   
 }
 .products{
@@ -76,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 nav {
-  background-color: 0b1413;
   padding: 1rem 1rem;
+  
 }
 
 #search_btn {
@@ -108,18 +104,19 @@ nav {
 }
 
 #cart {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #f58709;
   -ms-flex-align: end;
 }
 
 #cart_count {
   background-color:#f58709;
-  padding: 0.5rem 0.7rem;
-  border-radius: 0.2rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 50%;
   color: black;
   font-weight: bold;
   font-size: 0.9rem;
+  
 }
 
 /* Home page */
@@ -172,7 +169,7 @@ nav {
 /* Footer */
 footer {
   margin-top: 8rem;
-  color: grey;
+  background-color: rgba(0, 0, 0, 0.69);
   bottom: 0;
   width: 100%;
   
@@ -684,15 +681,13 @@ ul.CTAs a {
 }
 .navbar{
   
-  background-color: #0b1413;
-  margin-bottom: 2px;
+  background-color: rgba(0, 0, 0, 0.69);
+  margin-bottom: 1px;
   padding: 0.5rem 0.5rem;
-}
-.carousell{
   
-  margin-left: -420px;
-  margin-right: -420px;
 }
+
+
 .Img{
   width: 2000px;
   height: 500px;
@@ -727,7 +722,9 @@ ul.CTAs a {
   max-height: 100%;
 } */
 
-
+#logo{
+  opacity: 0.9;
+}
 
 
 
