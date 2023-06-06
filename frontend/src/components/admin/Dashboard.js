@@ -45,7 +45,7 @@ export default function Dashboard () {
             <div className="col-12 col-md-10 dash">
                 <h1 className="my-4">Dashboard</h1>
                 <div className="row pr-4">
-                    <div className="col-xl-12 col-sm-12 mb-3">
+                    <div className="col-xl-12 col-sm-12 mb-3 totalAmount">
                         <div className="card text-dark o-hidden h-100">
                             <div className="card-body">
                                 <div className="text-center card-font-size">Total Amount<br /> <b>LKR {totalAmount}</b>

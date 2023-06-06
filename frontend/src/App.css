@@ -27,7 +27,7 @@ html,
 
 .App{
   background-color: rgba(231, 211, 182, 0.73);
-  background-image: url("https://i.pinimg.com/564x/02/17/fe/0217fe1584aa57dc36dff482de55e9dc.jpg");
+  background-image: url("https://ayush.lk/wp-content/themes/twentytwenty/images/main-bg-new.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 95px;
@@ -97,7 +97,7 @@ nav {
 
 #login_btn,
 #view_btn {
-  background-color: #FABB58;
+  background-color: #e76578d9;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
   border-radius: 10px;
@@ -105,12 +105,12 @@ nav {
 
 #cart {
   font-size: 1.4rem;
-  color: #f58709;
+  color:#e76578d4;
   -ms-flex-align: end;
 }
 
 #cart_count {
-  background-color:#f58709;
+  background-color:#E76579;
   padding: 0.1rem 0.3rem;
   border-radius: 50%;
   color: black;
@@ -167,13 +167,12 @@ nav {
 }
 
 /* Footer */
-footer {
-  margin-top: 8rem;
-  background-color: rgba(0, 0, 0, 0.69);
-  bottom: 0;
-  width: 100%;
+
+.foot{
+  padding-top: 14px;
   
-}
+} 
+
 
 /* Ratings */
 
@@ -263,7 +262,7 @@ footer {
   border-radius: 50%;
   border: 6px solid #014202;
   border-color: #0b4501 transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
+  /* animation: lds-dual-ring 1.2s linear infinite; */
 }
 @keyframes lds-dual-ring {
   0% {
@@ -301,10 +300,10 @@ footer {
 
 #checkout_btn,
 .review-btn {
-  background-color: #FABB58;
-  border-color: #FABB58;
-  margin-top: 2rem;
-  border-radius: 5rem;
+  background-color: #FABB58 !important;
+  border-color: #FABB58 !important;
+  margin-top: 2rem !important;
+  border-radius: 10px !important;
 }
 
 #view_order_details {
@@ -558,8 +557,8 @@ footer {
 #sidebar {
   min-width: 100%;
   max-width: 100%;
-  background: #4A8082;
-  color: #878484;
+  background: #555858;
+  color: #ede6e6;
   transition: all 0.3s;
 }
 #sidebar.active {
@@ -681,7 +680,7 @@ ul.CTAs a {
 }
 .navbar{
   
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: #5d4e29a7;
   margin-bottom: 1px;
   padding: 0.5rem 0.5rem;
   

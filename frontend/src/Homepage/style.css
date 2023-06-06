@@ -112,7 +112,12 @@
     justify-content: center;
     font-weight: normal;
 }
-
+.navbar .navbar-nav .nav-link {
+    padding: 25px 15px;
+    color: #FABB58;
+    font-weight: 500;
+    outline: none;
+}
 
 /*** Navbar ***/
 /* .fixed-top {
@@ -133,11 +138,12 @@
     margin-left: 8px;
 }
 
-/* .navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link {
     padding: 25px 15px;
     color: #555555;
     font-weight: 500;
     outline: none;
+}
 
 
 .navbar .navbar-nav .nav-link:hover,
@@ -370,7 +376,7 @@
 
 /*** Footer ***/
 .footer {
-    color: #999999;
+    color: #5D4E29;
 }
 
 .footer .btn.btn-link {
@@ -378,7 +384,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #999999;
+    color: #e7657856;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -389,7 +395,7 @@
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: #999999;
+    color: #e7657856;
     margin-right: 10px;
 }
 
@@ -494,7 +500,7 @@ body {
   }
   
   .card-footer .media img {
-    border: solid 3px rgba(255, 255, 255, 0.3);
+    border: solid 3px #e7657856;
   }
   
   .card-meta {
@@ -544,4 +550,21 @@ body {
 
 
 /* backtotop */
-  
+
+#carouselExampleIndicators{
+    margin-top: -5px;
+    margin-left: -361px;
+    margin-right: -361px;
+}
+
+
+
+/* myCardImage */
+
+
+.myCardImage {
+    width: 100%;
+    /* Add more styles as needed */
+  }
+
+ 
